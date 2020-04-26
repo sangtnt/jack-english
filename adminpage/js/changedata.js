@@ -1,0 +1,29 @@
+$(document).ready(function(){
+    $(".tablelist").click(function(){
+        $("#id").val($(this).find(".id").text());
+        $(".btnadd").hide();
+        $(".btnedit").show();
+    })
+    $(".btncancle").click(function(){
+        $(".btnadd").show();
+        $(".btnedit").hide();
+        $("#id").val("");
+        $("#audio").val("");
+    })
+    $(".tablevocab").click(function(){
+        $("#id").val($(this).find(".id").text());
+        $("#content").val($(this).find(".content").text());
+        $("#meaning").val($(this).find(".meaning").text());
+        $("#example").val($(this).find(".example").text());
+        $(".btnadd").hide();
+        $(".btnedit").show();
+    })
+    $(".btncanclevocab").click(function(){
+        $(".btnadd").show();
+        $(".btnedit").hide();
+        $("#id").val("");
+        $("#content").val("");
+        $("#meaning").val("");
+        $("#example").val("");
+    })
+})

@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $(".contentvocab").click(function(){
+        $(".meanvocab").slideDown();
+        $(".contentvocab").hide();
+    });
+    $(".meanvocab").click(function(){
+        $(".meanvocab").hide();
+        $(".contentvocab").slideDown();
+    })
+})
